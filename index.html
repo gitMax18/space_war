@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <meta name="description" content="Jeu de tir spacial contre des météorites" />
+        <meta name="keywords" content="espace, guerre, tir, jeu" />
+        <title>Guerre de l'espace</title>
+    </head>
+    <body>
+        <main class="main-container">
+            <section class="game">
+                <h1 class="title">Guerre de l'espace</h1>
+                <div class="game-container"></div>
+                <img class="game-image-left" src="./assets/images/meteor.png" alt="meteorite" />
+                <img class="game-image-right" src="./assets/images/meteor2.png" alt="meteorite" />
+                <img class="game-image-space1" src="./assets/images/spaceship2.png" alt="spaceship" />
+            </section>
+            <section class="instruction">
+                <div class="instruction-content">
+                    <h2 class="instruction-title">instruction</h2>
+                    <ul class="instruction-list">
+                        <li class="instruction-item">Déplacez-vous à l'aide de vos touches directionnelle</li>
+                        <li class="instruction-item">Tirez avec le bouton gauche de votre souris</li>
+                        <li class="instruction-item">Détruisez les météorites à l'aide de votre laser pour survivre</li>
+                        <li class="instruction-item">Tirez sur une étoile vous retirera des points</li>
+                        <li class="instruction-item">Collecter un maximum d'étoile</li>
+                        <li class="instruction-item">Le jeu s'accélére a interval régulier</li>
+                        <li class="instruction-item">La partie s'arrête lorsque vous êtes tocuhez par une météorite</li>
+                    </ul>
+                </div>
+                <img class="instruction-img" src="./assets/images/space-ship.png" alt="vaisseau" />
+            </section>
+            <section class="contact">
+                <div class="contact-container">
+                    <h2 class="contact-title">contact</h2>
+                    <form id="my-form" action="https://formspree.io/f/xrgjdypk" method="POST">
+                        <div class="input-container">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="input-container">
+                            <label for="message">Message:</label>
+                            <textarea name="message" class="contact-message" id="message"></textarea>
+                        </div>
+                        <p id="my-form-status"></p>
+                        <button id="my-form-button">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+        <script src="./javascript/app.js" type="module"></script>
+    </body>
+</html>

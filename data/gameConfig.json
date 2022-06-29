@@ -1,0 +1,17 @@
+
+        {
+            "objectVelocityX": 50,
+            "objectVelocityY": 20,
+            "gameWidth":800,
+            "gameHeight":600,
+            "gravityY":100,
+            "laserVelocity":800,
+            "starCount":10,
+            "meteorCount":4,
+            "playerVelocity":300,
+            "starPenality":10,
+            "increaseGravityVal" : 20,
+            "increaseInterval" : 5
+        }
+    
+ 
